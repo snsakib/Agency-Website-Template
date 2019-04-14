@@ -1,0 +1,25 @@
+:host {
+  display: block;
+}
+
+#la-agencia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  flex-direction: column-reverse;
+
+  @media screen and (min-width: 1000px) {
+    flex-direction: row;
+  }
+}
+
+#description {
+  width: 40%;
+}
+
+#illustration {
+}

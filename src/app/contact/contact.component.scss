@@ -1,0 +1,103 @@
+:host {
+  display: block;
+  background-image: url(../../assets/images/contact/bg-1440.png);
+}
+
+#contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  @media screen and (min-width: 1000px) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+
+#contact-form {
+  padding-left: 5rem;
+
+  .description-header {
+    margin: auto;
+  }
+  .header-bg {
+    color: #312265;
+  }
+  h1,
+  h2 {
+    color: white;
+  }
+
+  form {
+    min-width: 280px;
+    max-width: 500px;
+
+    mat-form-field {
+      width: 100%;
+
+      input {
+        color: white;
+      }
+    }
+
+    mat-checkbox {
+      text-align: center;
+      display: block;
+      color: white;
+      margin: auto;
+      font-size: 12px;
+    }
+
+    button {
+      display: block;
+      margin: 1rem auto;
+      border-radius: 20px;
+      background-color: #ea5a24;
+      color: white;
+    }
+  }
+}
+
+#contact-message {
+  width: 50%;
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #fff;
+  }
+
+  h2 {
+    width: 210px;
+    font-size: 1.2rem;
+    color: #312265;
+    background-color: white;
+    padding: 0.2rem;
+    margin: auto;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 1rem;
+    color: #ffffff;
+  }
+
+  img {
+    margin-top: -4rem;
+    margin-left: 2rem;
+  }
+}

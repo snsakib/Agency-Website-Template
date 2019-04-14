@@ -1,0 +1,58 @@
+:host {
+  display: block;
+}
+
+#description {
+  .description-header {
+    margin: 0 auto;
+  }
+
+  .description-para {
+    width: 280px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 450px) {
+      width: 400px;
+    }
+  }
+
+  .description-btn {
+    display: block;
+    margin: 2rem auto;
+  }
+}
+
+#service-demo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.mat-card {
+  width: 280px;
+  text-align: center;
+  margin: 1rem;
+
+  &:not([class*='mat-elevation-z']) {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .mat-card-header {
+    display: block;
+    color: #312265;
+  }
+
+  a {
+    color: #312265;
+    padding: 5px;
+    font-weight: 500;
+  }
+}

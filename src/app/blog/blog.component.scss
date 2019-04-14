@@ -1,0 +1,81 @@
+:host {
+  display: block;
+  margin-top: -4rem;
+}
+
+#description {
+  @media screen and (min-width: 1000px) {
+    width: 50%;
+    padding: 0 2rem;
+  }
+  img {
+    display: block;
+  }
+}
+
+#post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  @media screen and (min-width: 1000px) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  #post-details {
+    padding: 0 10%;
+    @media screen and (min-width: 1000px) {
+      width: 50%;
+      padding: 0 2rem;
+    }
+  }
+
+  #post-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: italic;
+    color: #312265;
+  }
+
+  #post-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #312265;
+    margin: 1rem 0;
+  }
+
+  #post-summary {
+    font-size: 1rem;
+    color: #18191b;
+  }
+
+  #post-link {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #362868;
+    margin-top: 2rem;
+    text-align: right;
+  }
+}

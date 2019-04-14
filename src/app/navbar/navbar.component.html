@@ -1,0 +1,73 @@
+<mat-sidenav-container class="sidenav-container">
+  <!-- Menu -->
+  <mat-sidenav
+    #drawer
+    class="sidenav"
+    fixedInViewport="true"
+    role="navigation"
+    mode="push"
+    opened="false"
+  >
+    <mat-nav-list>
+      <a mat-list-item href="#" (click)="drawer.toggle()" class="nav-link">
+        Home
+      </a>
+      <a mat-list-item href="#" (click)="drawer.toggle()" class="nav-link">
+        La Agencia
+      </a>
+      <a mat-list-item href="#" (click)="drawer.toggle()" class="nav-link">
+        Servicios
+      </a>
+      <a mat-list-item href="#" (click)="drawer.toggle()" class="nav-link">
+        Portafolio
+      </a>
+      <a mat-list-item href="#" (click)="drawer.toggle()" class="nav-link">
+        Blog
+      </a>
+    </mat-nav-list>
+    <button mat-flat-button color="warn" class="contact-btn">
+      Contáctanos
+      <mat-icon inline="true">call</mat-icon>
+    </button>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <!-- Navbar -->
+    <mat-toolbar>
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        (click)="drawer.toggle()"
+        *ngIf="isLaptop ? false : true"
+        id="menuIcon"
+      >
+        <!-- menu icon -->
+        &#9776;
+      </button>
+      <a href="#home" id="navbar-logo">
+        <!-- Logo -->
+        <img src="../../assets/images/logo.svg" />
+      </a>
+      <mat-nav-list *ngIf="isLaptop">
+        <a mat-list-item href="#home" class="nav-link">
+          Home
+        </a>
+        <a mat-list-item href="#laAgencia" class="nav-link">
+          La Agencia
+        </a>
+        <a mat-list-item href="#servicios" class="nav-link">
+          Servicios
+        </a>
+        <a mat-list-item href="#portafolio" class="nav-link">
+          Portafolio
+        </a>
+        <a mat-list-item href="#blog" class="nav-link">
+          Blog
+        </a>
+      </mat-nav-list>
+      <button mat-flat-button color="warn" *ngIf="isLaptop" class="contact-btn">
+        Contáctanos <mat-icon inline="true">call</mat-icon>
+      </button>
+    </mat-toolbar>
+    <app-home></app-home>
+  </mat-sidenav-content>
+</mat-sidenav-container>

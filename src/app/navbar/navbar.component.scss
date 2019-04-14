@@ -1,0 +1,74 @@
+@import '../../assets/styles/variables';
+
+.sidenav-container {
+  // height: 100vh;
+
+  .nav-link {
+    color: $white;
+    font-size: 1.125rem; // 18px
+    font-weight: 500;
+
+    &.active,
+    &:hover {
+      color: $dark-orange;
+    }
+  }
+
+  .contact-btn {
+    width: 10rem;
+    margin-left: 1rem;
+    font-weight: 500;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#ea5a24), to(#ff8606));
+    background-image: linear-gradient(to top, #ea5a24, #ff8606);
+  }
+
+  .sidenav {
+    width: 12.5rem;
+    background-color: $light-blue;
+
+    mat-nav-list {
+      margin-top: 64px;
+    }
+  }
+
+  mat-sidenav-content {
+    background-color: $white;
+
+    mat-toolbar {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      height: 64px;
+      z-index: 1;
+      background-color: $light-blue;
+
+      #menuIcon {
+        background-color: $light-blue;
+        margin-right: 1.25rem;
+        padding: 0.625rem;
+        color: $white;
+        font-size: 1.3125rem; // 21px
+        border: none;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      #navbar-logo {
+        padding-top: 12px;
+      }
+
+      mat-nav-list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 0;
+        margin-left: auto;
+      }
+    }
+  }
+}

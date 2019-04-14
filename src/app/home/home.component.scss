@@ -1,0 +1,173 @@
+@import '../../assets/styles/variables';
+@import '../../../node_modules/rfs/scss';
+
+:host {
+  display: block;
+}
+
+.mySlides {
+  display: none;
+  height: 100vh;
+  background-image: url('../../assets/images/home/bg-960.png');
+  background-size: cover;
+
+  @media screen and (min-width: 1000px) {
+    height: 120vh;
+  }
+
+  .content {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    @media screen and (min-width: 1000px) {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+    }
+
+    .description {
+      h1 {
+        @include rfs(125);
+        font-weight: 800;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 0.6;
+        letter-spacing: 25px;
+        text-align: right;
+        color: $white;
+      }
+
+      h2 {
+        @include rfs(40);
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.29;
+        letter-spacing: 5.8px;
+        text-align: center;
+        color: $light-blue;
+        background-color: $white;
+        padding: 3px;
+        margin: 1rem 0;
+      }
+
+      h3 {
+        @include rfs(30);
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.29;
+        letter-spacing: 5.8px;
+        text-align: right;
+        color: $white;
+      }
+
+      .cta-btn {
+        @include rfs(20);
+        display: block;
+        color: $white;
+        font-weight: 500;
+        border-radius: 20px;
+        -webkit-box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+        background-image: -webkit-gradient(linear, left bottom, left top, from(#ea5a24), to(#ff8606));
+        background-image: linear-gradient(to top, #ea5a24, #ff8606);
+        margin: 1rem auto;
+      }
+    }
+
+    .img {
+      -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+      order: 0;
+    }
+  }
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 5px;
+  margin-top: -22px;
+  color: $dark-orange;
+  font-weight: bold;
+  font-size: 30px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: $white;
+  border-radius: 0 50px 50px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 50px 0 0 50px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}

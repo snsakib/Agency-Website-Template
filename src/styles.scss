@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/styles/main.scss';
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
