@@ -30,15 +30,18 @@
   input {
     width: 200px;
     height: 35px;
+    margin: 1rem 0;
     border: none;
     border-radius: 22px 0 0 22px;
-    -webkit-box-shadow: 0 0 10px 0 #190b49;
-    box-shadow: 0 0 51px 0 #190b49;
+    -webkit-box-shadow: 0 0 8px 0 #190b49;
+    box-shadow: 0 0 8px 0 #190b49;
     background-color: #ffffff;
     padding-left: 20px;
   }
   button {
     border-radius: 0 22px 22px 0;
     background-color: #ea5a24;
+    -webkit-box-shadow: 0 0 8px 0 #190b49;
+    box-shadow: 0 0 8px 0 #190b49;
   }
 }
