@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-footer',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
+  subscribeForm: FormGroup;
 
-  constructor() { }
+  sendMessage() {}
+
+  constructor(private fb: FormBuilder) {}
 
   ngOnInit() {
+    this.subscribeForm = this.fb.group({
+      email: ''
+    });
   }
-
 }

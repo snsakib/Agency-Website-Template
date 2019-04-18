@@ -3,6 +3,42 @@
   border: 1px solid red;
 }
 
-footer {
-  background-image: url(../../assets/images/footer/Line.png);
+#contact-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  @media screen and (min-width: 576px) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+#subscribe {
+  input {
+    width: 200px;
+    height: 35px;
+    border: none;
+    border-radius: 22px 0 0 22px;
+    -webkit-box-shadow: 0 0 10px 0 #190b49;
+    box-shadow: 0 0 51px 0 #190b49;
+    background-color: #ffffff;
+    padding-left: 20px;
+  }
+  button {
+    border-radius: 0 22px 22px 0;
+    background-color: #ea5a24;
+  }
 }

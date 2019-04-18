@@ -1,14 +1,16 @@
-<footer id="#footer">
-  <section id="links">
+<footer>
+  <section id="contact-links">
     <section id="subscribe">
-      <h1>¡Suscríbete a nuestro Newsletter!</h1>
-      <!-- <form action="">
-        <input type="email" />
-        <button type="submit">Enviar</button>
-      </form> -->
+      <span>¡Suscríbete a nuestro Newsletter!</span>
+      <form (ngSubmit)="sendMessage()" [formGroup]="subscribeForm">
+        <input type="email" placeholder="nombreusuario@gmail.com" />
+        <button mat-raised-button type="submit">
+          Enviar
+        </button>
+      </form>
     </section>
     <section id="contact">
-      <h1>Encuentra más contenido</h1>
+      <span>Encuentra más contenido</span>
     </section>
   </section>
 </footer>
