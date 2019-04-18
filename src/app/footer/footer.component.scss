@@ -4,6 +4,7 @@
 }
 
 #contact-links {
+  padding: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,7 +61,6 @@
 }
 
 #info {
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,5 +115,59 @@
   textarea {
     border: 1px solid black;
     border-radius: 3px;
+  }
+}
+
+#sitemap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  h1 {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 3.54;
+    letter-spacing: 1px;
+    // color: #ffffff;
+  }
+
+  #page-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    ul {
+      li {
+        list-style-type: none;
+
+        a {
+          color: black;
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+
+  #last-link {
+    color: #ea5a24;
+    font-size: 1rem;
+    text-align: center;
+    margin: 1rem auto;
   }
 }
