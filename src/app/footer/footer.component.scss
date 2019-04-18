@@ -1,10 +1,13 @@
 :host {
   display: block;
   border: 1px solid red;
+  margin-top: -5rem;
 }
 
 #contact-links {
-  padding: 2rem 0;
+  background-image: url(../../assets/images/footer/bg-480.png);
+  background-size: cover;
+  padding: 7rem 0 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,6 +64,7 @@
 }
 
 #info {
+  background-color: #312265;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,7 +177,7 @@
 }
 
 #terms {
-  border: 1px solid red;
+  background-color: #221551;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
