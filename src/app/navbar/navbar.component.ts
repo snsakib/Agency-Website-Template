@@ -6,6 +6,7 @@ import { Component, OnInit, AfterViewInit, HostListener } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit, AfterViewInit {
+  menuOptions = ['Home', 'La Agencia', 'Servicios', 'Portafolio', 'Blog'];
   navLinks: HTMLCollectionOf<Element>;
   // If the width of screen is equals or greather than 1024px, the value of the property becomes true.
   isLaptop: boolean;

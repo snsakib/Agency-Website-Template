@@ -9,20 +9,14 @@
     opened="false"
   >
     <mat-nav-list>
-      <a mat-list-item href="#" (click)="drawer.toggle()" class="nav-link">
-        Home
-      </a>
-      <a mat-list-item href="#" (click)="drawer.toggle()" class="nav-link">
-        La Agencia
-      </a>
-      <a mat-list-item href="#" (click)="drawer.toggle()" class="nav-link">
-        Servicios
-      </a>
-      <a mat-list-item href="#" (click)="drawer.toggle()" class="nav-link">
-        Portafolio
-      </a>
-      <a mat-list-item href="#" (click)="drawer.toggle()" class="nav-link">
-        Blog
+      <a
+        *ngFor="let menuOption of menuOptions"
+        mat-list-item
+        href="#{{ menuOption }}"
+        (click)="drawer.toggle()"
+        class="nav-link"
+      >
+        {{ menuOption }}
       </a>
     </mat-nav-list>
     <button mat-flat-button color="warn" class="contact-btn">
@@ -60,21 +54,17 @@
         </svg>
       </a>
       <mat-nav-list *ngIf="isLaptop">
-        <a mat-list-item href="#home" class="nav-link">
-          Home
-        </a>
-        <a mat-list-item href="#laAgencia" class="nav-link">
-          La Agencia
-        </a>
-        <a mat-list-item href="#servicios" class="nav-link">
-          Servicios
-        </a>
-        <a mat-list-item href="#portafolio" class="nav-link">
-          Portafolio
-        </a>
-        <a mat-list-item href="#blog" class="nav-link">
-          Blog
-        </a>
+        <mat-nav-list>
+          <a
+            *ngFor="let menuOption of menuOptions"
+            mat-list-item
+            href="#{{ menuOption }}"
+            (click)="drawer.toggle()"
+            class="nav-link"
+          >
+            {{ menuOption }}
+          </a>
+        </mat-nav-list>
       </mat-nav-list>
       <button mat-flat-button color="warn" *ngIf="isLaptop" class="contact-btn">
         Contáctanos <mat-icon inline="true">call</mat-icon>
