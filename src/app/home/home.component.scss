@@ -7,11 +7,11 @@
 
 .mySlides {
   padding: 2rem 0;
-  background-image: url('../../assets/images/home/bg-960.png');
+  background-image: url('assets/images/home/bg-960.png');
   background-size: cover;
   @media screen and (min-width: 1000px) {
     padding: 5rem 0;
-    background-image: url('../../assets/images/home/bg-1440.png');
+    background-image: url('assets/images/home/bg-1440.png');
   }
   display: none;
   height: 80vh;
