@@ -16,105 +16,19 @@
   </section>
 
   <section id="works">
-    <mat-card>
-      <p class="categoria">Categoría</p>
+    <mat-card *ngFor="let portfolio of portfolios">
+      <p class="categoria">{{ portfolio.category }}</p>
       <img
         mat-card-image
-        src="assets/images/portafolio/portfolio-1.png"
-        alt="#"
+        src="{{ portfolio.imgSrc }}"
+        alt="{{ portfolio.imgAlt }}"
       />
       <mat-card-header>
-        <mat-card-title>Nombre del caso de éxito 1</mat-card-title>
+        <mat-card-title>{{ portfolio.title }}</mat-card-title>
       </mat-card-header>
       <mat-card-content>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-          ullamcorper libero et tempus bibendum.
-        </p>
-      </mat-card-content>
-    </mat-card>
-    <mat-card>
-      <p class="categoria">Categoría</p>
-      <img
-        mat-card-image
-        src="assets/images/portafolio/portfolio-2.png"
-        alt="#"
-      />
-      <mat-card-header>
-        <mat-card-title>Nombre del caso de éxito 1</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-          ullamcorper libero et tempus bibendum.
-        </p>
-      </mat-card-content>
-    </mat-card>
-    <mat-card>
-      <p class="categoria">Categoría</p>
-      <img
-        mat-card-image
-        src="assets/images/portafolio/portfolio-3.png"
-        alt="#"
-      />
-      <mat-card-header>
-        <mat-card-title>Nombre del caso de éxito 1</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-          ullamcorper libero et tempus bibendum.
-        </p>
-      </mat-card-content>
-    </mat-card>
-    <mat-card>
-      <p class="categoria">Categoría</p>
-      <img
-        mat-card-image
-        src="assets/images/portafolio/portfolio-4.png"
-        alt="#"
-      />
-      <mat-card-header>
-        <mat-card-title>Nombre del caso de éxito 1</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-          ullamcorper libero et tempus bibendum.
-        </p>
-      </mat-card-content>
-    </mat-card>
-    <mat-card>
-      <p class="categoria">Categoría</p>
-      <img
-        mat-card-image
-        src="assets/images/portafolio/portfolio-5.png"
-        alt="#"
-      />
-      <mat-card-header>
-        <mat-card-title>Nombre del caso de éxito 1</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-          ullamcorper libero et tempus bibendum.
-        </p>
-      </mat-card-content>
-    </mat-card>
-    <mat-card>
-      <p class="categoria">Categoría</p>
-      <img
-        mat-card-image
-        src="assets/images/portafolio/portfolio-6.png"
-        alt="#"
-      />
-      <mat-card-header>
-        <mat-card-title>Nombre del caso de éxito 1</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-          ullamcorper libero et tempus bibendum.
+          {{ portfolio.content }}
         </p>
       </mat-card-content>
     </mat-card>
