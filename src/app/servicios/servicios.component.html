@@ -15,60 +15,19 @@
     </button>
   </section>
   <section id="service-demo">
-    <mat-card>
-      <img mat-card-image src="assets/images/servicios/service-1.png" alt="#" />
+    <mat-card *ngFor="let service of services">
+      <img
+        mat-card-image
+        src="{{ service.imgSrc }}"
+        alt="{{ service.imgAlt }}"
+      />
       <mat-card-header>
-        <mat-card-title>Nombre del Servicio</mat-card-title>
+        <mat-card-title>{{ service.title }}</mat-card-title>
       </mat-card-header>
       <mat-card-content>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          ullamcorper diam nisl, eget vulputate sapien scelerisque ut.
-        </p>
+        <p>{{ service.content }}</p>
       </mat-card-content>
-      <a href="#">Ver más</a>
-    </mat-card>
-
-    <mat-card>
-      <img mat-card-image src="assets/images/servicios/service-2.png" alt="#" />
-      <mat-card-header>
-        <mat-card-title>Nombre del Servicio</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          ullamcorper diam nisl, eget vulputate sapien scelerisque ut.
-        </p>
-      </mat-card-content>
-      <a href="#">Ver más</a>
-    </mat-card>
-
-    <mat-card>
-      <img mat-card-image src="assets/images/servicios/service-3.png" alt="#" />
-      <mat-card-header>
-        <mat-card-title>Nombre del Servicio</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          ullamcorper diam nisl, eget vulputate sapien scelerisque ut.
-        </p>
-      </mat-card-content>
-      <a href="#">Ver más</a>
-    </mat-card>
-
-    <mat-card>
-      <img mat-card-image src="assets/images/servicios/service-4.png" alt="#" />
-      <mat-card-header>
-        <mat-card-title>Nombre del Servicio</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          ullamcorper diam nisl, eget vulputate sapien scelerisque ut.
-        </p>
-      </mat-card-content>
-      <a href="#">Ver más</a>
+      <a href="{{ service.CTAhref }}">{{ service.CTAtext }}</a>
     </mat-card>
   </section>
 </section>

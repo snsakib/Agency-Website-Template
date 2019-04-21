@@ -6,10 +6,46 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./servicios.component.scss']
 })
 export class ServiciosComponent implements OnInit {
+  services = [
+    {
+      imgSrc: 'assets/images/servicios/service-1.png',
+      imgAlt: '#',
+      title: 'Nombre del Servicio',
+      content:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ullamcorper diam nisl, eget vulputate sapien scelerisque ut.',
+      CTAtext: 'Ver más',
+      CTAhref: '#'
+    },
+    {
+      imgSrc: 'assets/images/servicios/service-2.png',
+      imgAlt: '#',
+      title: 'Nombre del Servicio',
+      content:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ullamcorper diam nisl, eget vulputate sapien scelerisque ut.',
+      CTAtext: 'Ver más',
+      CTAhref: '#'
+    },
+    {
+      imgSrc: 'assets/images/servicios/service-3.png',
+      imgAlt: '#',
+      title: 'Nombre del Servicio',
+      content:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ullamcorper diam nisl, eget vulputate sapien scelerisque ut.',
+      CTAtext: 'Ver más',
+      CTAhref: '#'
+    },
+    {
+      imgSrc: 'assets/images/servicios/service-4.png',
+      imgAlt: '#',
+      title: 'Nombre del Servicio',
+      content:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ullamcorper diam nisl, eget vulputate sapien scelerisque ut.',
+      CTAtext: 'Ver más',
+      CTAhref: '#'
+    }
+  ];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
