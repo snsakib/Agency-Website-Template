@@ -1,6 +1,6 @@
 :host {
   display: block;
-  border: 1px solid red;
+  padding: 2rem 0;
 }
 
 #la-agencia {
@@ -8,27 +8,26 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
 
   @media screen and (min-width: 1000px) {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
 }
 
 #description {
-  width: 40%;
-}
-
-#illustration {
+  @media screen and (min-width: 1000px) {
+    width: 40%;
+  }
 }
