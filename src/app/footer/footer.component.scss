@@ -1,11 +1,11 @@
 :host {
   display: block;
   margin-top: -5rem;
-  border: 1px solid red;
+  color: white;
 }
 
 #contact-links {
-  background-image: url(../../assets/images/footer/bg-480.png);
+  background-image: url(../../assets/images/footer/footer-bg-300.png);
   background-size: cover;
   padding: 7rem 0 2rem 0;
   display: -webkit-box;
@@ -27,6 +27,13 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    background-image: url(../../assets/images/footer/footer-bg-480.png);
+  }
+  @media screen and (min-width: 1000px) {
+    background-image: url(../../assets/images/footer/footer-bg-960.png);
+  }
+  @media screen and (min-width: 2000px) {
+    background-image: url(../../assets/images/footer/footer-bg-1440.png);
   }
 }
 
@@ -117,7 +124,7 @@
   }
 
   textarea {
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 3px;
   }
 }
@@ -161,7 +168,7 @@
         list-style-type: none;
 
         a {
-          color: black;
+          color: white;
           padding: 0 10px;
         }
       }
@@ -199,5 +206,9 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+  }
+
+  a {
+    color: white;
   }
 }
