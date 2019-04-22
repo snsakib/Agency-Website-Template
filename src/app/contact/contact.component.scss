@@ -1,7 +1,20 @@
 :host {
   display: block;
-  background-image: url(../../assets/images/contact/bg-1440.png);
+  background-image: url(../../assets/images/contact/contact-bg-320.png);
+  background-size: cover;
   border: 1px solid red;
+
+  @media screen and (min-width: 350px) and (max-width: 999.9px) {
+    background-image: url(../../assets/images/contact/contact-bg-480.png);
+  }
+
+  @media screen and (min-width: 1000px) and (max-width: 1500px) {
+    background-image: url(../../assets/images/contact/contact-bg-960.png);
+  }
+
+  @media screen and (min-width: 1500.1px) {
+    background-image: url(../../assets/images/contact/contact-bg-1440.png);
+  }
 }
 
 #contact {
