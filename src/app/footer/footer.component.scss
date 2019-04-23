@@ -68,6 +68,17 @@
   -ms-flex-align: center;
   align-items: center;
   margin: 1rem 0;
+
+  a {
+    width: 2rem;
+    height: 2rem;
+
+    &:hover {
+      svg .shape {
+        fill: #ea5a24;
+      }
+    }
+  }
 }
 
 #info {
