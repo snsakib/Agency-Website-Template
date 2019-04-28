@@ -104,6 +104,44 @@
       }
     }
   }
+
+  p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+
+    a {
+      display: block;
+      text-decoration: none;
+      color: #bfbfbf;
+      font-weight: 500;
+      padding: 0.2em 0.3em;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+      background-image: -webkit-gradient(
+        linear,
+        left top, right bottom,
+        from(#f9d423),
+        to(#f83600)
+      );
+      background-image: linear-gradient(
+        to bottom right,
+        #f9d423 0%,
+        #f83600 100%
+      );
+      background-size: 100% 0.1em;
+      background-repeat: no-repeat;
+      background-position: left 0 bottom 5%;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      margin: 1rem 0;
+
+      &:hover {
+        background-size: 100% 100%;
+        color: #0b0d0e;
+      }
+    }
+  }
 }
 
 /* Slideshow container */
