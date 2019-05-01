@@ -1,27 +1,27 @@
-# Agency
+# Overview
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.4.
+**"Agency"** is a corporate website landing page. It is fully responsive in design. This webpage is developed as a personal project of mine to refurbish my front-end web development skills.
 
-## Development server
+# Technologies Implemented
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Angular
 
-## Code scaffolding
+- Angular Material
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- HTML 5
 
-## Build
+- CSS 3
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- Sass
 
-## Running unit tests
+- TypeScript
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Git
 
-## Running end-to-end tests
+- Zeplin
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+- Photoshop
 
-## Further help
+## [Live Demo](https://www.snsakib.com/agency-landing-page/)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## [Case Study](https://www.snsakib.com/projects/agency/case-study)
