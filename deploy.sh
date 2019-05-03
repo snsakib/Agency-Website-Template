@@ -2,7 +2,7 @@
 
 echo "Starting script..."
 
-read -r -p "Enter commit message: " CM
+#read -r -p "Enter commit message: " CM
 
 # Production build
 echo "Building production files..."
@@ -17,5 +17,6 @@ cp index.html 404.html
 # Publishing to GitHub
 echo 'Publishing to GitHub'
 git add --all
-git commit -m "$CM"
+git commit
+#git commit -m "$CM"
 git push
