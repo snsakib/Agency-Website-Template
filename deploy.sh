@@ -2,8 +2,6 @@
 
 echo "Starting script..."
 
-#read -r -p "Enter commit message: " CM
-
 # Production build
 echo "Building production files..."
 ng build --prod --output-path docs --base-href /agency-landing-page/
@@ -17,6 +15,5 @@ cp index.html 404.html
 # Publishing to GitHub
 echo 'Publishing to GitHub'
 git add --all
-git commit
-#git commit -m "$CM"
+git commit -m "chore: production build"
 git push
