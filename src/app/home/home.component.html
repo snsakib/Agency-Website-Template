@@ -1,55 +1,53 @@
-<section id="home">
-  <div class="slideshow-container">
-    <div class="mySlides fade">
-      <section class="content">
-        <section class="description">
-          <h1>Somos</h1>
-          <h2>una agencia que</h2>
-          <h3>¡loren ipsum <b>dolor</b> sit!</h3>
-          <button mat-flat-button class="cta-btn">
-            Cuéntanos tu idea
-          </button>
-        </section>
-        <section class="img">
-          <img
-            src="assets/images/home/brain-199.png"
-            alt=""
-            srcset="
-              assets/images/home/brain-199.png  320w,
-              assets/images/home/brain-300.png  576w,
-              assets/images/home/brain-450.png 1440w,
-              assets/images/home/brain-999.png 2500w
-            "
-          />
-        </section>
+<section class="slideshow-container">
+  <section class="mySlides fade">
+    <div class="content">
+      <section class="description">
+        <h1>Somos</h1>
+        <h2>una agencia que</h2>
+        <h3>¡loren ipsum <b>dolor</b> sit!</h3>
+        <button mat-flat-button class="cta-btn">
+          Cuéntanos tu idea
+        </button>
       </section>
+      <div class="img">
+        <img
+          alt=""
+          srcset="
+            assets/images/home/brain-300.png 300w,
+            assets/images/home/brain-450.png 450w,
+            assets/images/home/brain-999.png 999w
+          "
+          sizes="(max-width: 576px) 250px,
+          (min-width: 576.1px) and (max-width: 1000px) 350px,
+          40vw"
+          src="assets/images/home/brain-300.png"
+        />
+      </div>
     </div>
-    <div class="mySlides fade">
-      <section class="content">
-        <p>
-          Designed by
-          <a
-            href="https://www.behance.net/ndavidsan"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Nelson David Sánchez</a
-          >
-        </p>
-        <p>
-          Developed by
-          <a
-            href="https://www.snsakib.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Syed Nazmus Sakib</a
-          >
-        </p>
-      </section>
+  </section>
+  <section class="mySlides fade">
+    <div class="content">
+      <p>
+        Designed by
+        <a
+          href="https://www.behance.net/ndavidsan"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Nelson David Sánchez</a
+        >
+      </p>
+      <p>
+        Developed by
+        <a
+          href="https://www.snsakib.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Syed Nazmus Sakib</a
+        >
+      </p>
     </div>
+  </section>
 
-    <a class="prev" (click)="plusSlides(-1)"><mat-icon>arrow_back</mat-icon></a>
-    <a class="next" (click)="plusSlides(1)"
-      ><mat-icon>arrow_forward</mat-icon></a
-    >
-  </div>
+  <a class="prev" (click)="plusSlides(-1)"><mat-icon>arrow_back</mat-icon></a>
+  <a class="next" (click)="plusSlides(1)"><mat-icon>arrow_forward</mat-icon></a>
 </section>
