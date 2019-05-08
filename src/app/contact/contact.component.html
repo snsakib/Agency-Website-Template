@@ -1,11 +1,10 @@
-<section id="contact-form">
-  <section id="description">
-    <section class="description-header">
-      <p class="header-bg">PC</p>
-      <h1>¡Ponte en</h1>
-      <h2>Contacto!</h2>
-    </section>
-  </section>
+<div id="contact-form">
+  <div class="description-header">
+    <p class="header-bg">PC</p>
+    <h1>¡Ponte en</h1>
+    <h2>Contacto!</h2>
+  </div>
+
   <form (ngSubmit)="sendMessage()" [formGroup]="contactForm">
     <mat-form-field color="warn">
       <input
@@ -44,8 +43,8 @@
     </mat-checkbox>
     <button mat-raised-button type="submit">Enviar datos</button>
   </form>
-</section>
-<section id="contact-message">
+</div>
+<div id="contact-message">
   <h1>Te asesoramos</h1>
   <h2>loren ipsum dolor sit</h2>
   <h3>elit amet consectetur adipscing</h3>
@@ -60,4 +59,4 @@
       40vw"
     src="assets/images/contact/keyboard-450.png"
   />
-</section>
+</div>
