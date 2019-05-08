@@ -1,5 +1,4 @@
 :host {
-  display: block;
   background-image: url(../../assets/images/contact/contact-bg-320.png);
   background-size: cover;
 
@@ -14,6 +13,7 @@
   @media screen and (min-width: 1500.1px) {
     background-image: url(../../assets/images/contact/contact-bg-1440.png);
   }
+
   padding: 5rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,20 +40,25 @@
 }
 
 #contact-form {
-  padding-left: 5rem;
+  @media screen and (min-width: 1000px) {
+    padding-left: 5rem;
+  }
 
   .description-header {
     margin: auto;
   }
+
   .header-bg {
     color: #312265;
   }
+
   h1,
   h2 {
     color: white;
   }
 
   form {
+    padding: 0 1rem;
     min-width: 280px;
     max-width: 500px;
 
@@ -89,6 +94,7 @@
   @media screen and (min-width: 1000px) {
     width: 50%;
   }
+
   h1 {
     text-align: center;
     font-size: 2rem;
