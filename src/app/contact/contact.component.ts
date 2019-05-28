@@ -44,7 +44,7 @@ export class ContactComponent implements AfterViewInit {
       'mat-form-field-ripple'
     ) as HTMLCollectionOf<HTMLSpanElement>;
     for (const input of Array.from(this.formFieldRipples)) {
-      input.style.backgroundColor = 'orange';
+      input.style.backgroundColor = '#ea5a24';
     }
   }
 
