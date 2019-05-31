@@ -44,7 +44,7 @@
     <mat-checkbox color="warn" formControlName="terms">
       Acepto Términos y Condiciones
     </mat-checkbox>
-    <button mat-raised-button type="submit">Enviar datos</button>
+    <button mat-raised-button type="submit" [disabled]="!contactForm.valid">Enviar datos</button>
   </form>
 </div>
 <div id="contact-message">
