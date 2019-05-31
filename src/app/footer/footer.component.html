@@ -3,8 +3,8 @@
     <section id="subscribe">
       <span>¡Suscríbete a nuestro Newsletter!</span>
       <form (ngSubmit)="sendMessage()" [formGroup]="subscribeForm">
-        <input type="email" placeholder="nombreusuario@gmail.com" />
-        <button mat-raised-button type="submit">
+        <input type="email" placeholder="nombreusuario@gmail.com" formControlName="email" required/>
+        <button mat-raised-button type="submit" [disabled]="!subscribeForm.valid">
           Enviar
         </button>
       </form>
