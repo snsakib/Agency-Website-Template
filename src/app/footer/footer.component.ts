@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-footer',
@@ -15,7 +15,7 @@ export class FooterComponent implements OnInit {
 
   ngOnInit() {
     this.subscribeForm = this.fb.group({
-      email: ['', Validators.email, Validators.required ]
+      email: ['']
     });
   }
 }
