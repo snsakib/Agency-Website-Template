@@ -1,17 +1,17 @@
-<section class="slideshow-container">
+<div class="slideshow-container">
   <section class="mySlides fade">
     <div class="content">
       <section class="description">
-        <h1>Somos</h1>
-        <h2>una agencia que</h2>
-        <h3>¡loren ipsum <b>dolor</b> sit!</h3>
+        <p>Somos</p>
+        <p>una agencia que</p>
+        <p>¡loren ipsum <span>dolor</span> sit!</p>
         <button mat-flat-button class="cta-btn">
           Cuéntanos tu idea
         </button>
       </section>
       <div class="img">
         <img
-          alt=""
+          alt="An image of human brain"
           srcset="
             assets/images/home/brain-300.png 300w,
             assets/images/home/brain-450.png 450w,
@@ -27,21 +27,23 @@
   </section>
   <section class="mySlides fade">
     <div class="content">
-      <p>
+      <p class="credits">
         Designed by
         <a
           href="https://www.behance.net/ndavidsan"
           target="_blank"
           rel="noopener noreferrer"
+          class="profile-link"
           >Nelson David Sánchez</a
         >
       </p>
-      <p>
+      <p class="credits">
         Developed by
         <a
           href="https://www.snsakib.com"
           target="_blank"
           rel="noopener noreferrer"
+          class="profile-link"
           >Syed Nazmus Sakib</a
         >
       </p>
@@ -50,4 +52,4 @@
 
   <a class="prev" (click)="plusSlides(-1)"><mat-icon>arrow_back</mat-icon></a>
   <a class="next" (click)="plusSlides(1)"><mat-icon>arrow_forward</mat-icon></a>
-</section>
+</div>
