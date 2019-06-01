@@ -1,33 +1,27 @@
-
-  <section id="description">
-    <section class="description-header">
-      <p class="header-bg">NS</p>
-      <h1>Nuestros</h1>
-      <h2>Servicios</h2>
-    </section>
-    <p class="description-para">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-      ullamcorper diam nisl, eget vulputate sapien scelerisque ut. Pellentesque
-      ultrices turpis quis metus ullamcorper ultricies.
-    </p>
-    <button class="description-btn">
-      Ver Servicios
-    </button>
+<section id="description">
+  <section class="description-header">
+    <p>NS</p>
+    <p>Nuestros</p>
+    <p>Servicios</p>
   </section>
-  <section id="service-demo">
-    <mat-card *ngFor="let service of services">
-      <img
-        mat-card-image
-        src="{{ service.imgSrc }}"
-        alt="{{ service.imgAlt }}"
-      />
-      <mat-card-header>
-        <mat-card-title>{{ service.title }}</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <p>{{ service.content }}</p>
-      </mat-card-content>
-      <a href="{{ service.CTAhref }}">{{ service.CTAtext }}</a>
-    </mat-card>
-  </section>
-
+  <p class="description-para">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+    ullamcorper diam nisl, eget vulputate sapien scelerisque ut. Pellentesque
+    ultrices turpis quis metus ullamcorper ultricies.
+  </p>
+  <button class="description-btn">
+    Ver Servicios
+  </button>
+</section>
+<section id="service-demo">
+  <mat-card *ngFor="let service of services">
+    <img mat-card-image src="{{ service.imgSrc }}" alt="{{ service.imgAlt }}" />
+    <mat-card-header>
+      <mat-card-title>{{ service.title }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{ service.content }}</p>
+    </mat-card-content>
+    <a href="{{ service.CTAhref }}">{{ service.CTAtext }}</a>
+  </mat-card>
+</section>

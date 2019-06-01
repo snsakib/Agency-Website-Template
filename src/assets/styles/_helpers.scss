@@ -2,14 +2,14 @@
   width: 280px;
   position: relative;
 
-  .header-bg {
+  p:nth-of-type(1) {
     text-shadow: 7px 2px 7px rgba(49, 34, 101, 0.2);
     font-size: 190px;
     font-weight: 900;
     color: #ffffff;
   }
 
-  h1 {
+  p:nth-of-type(2) {
     position: absolute;
     top: 110px;
     left: 58px;
@@ -20,7 +20,7 @@
     color: #312265;
   }
 
-  h2 {
+  P:nth-of-type(3) {
     position: absolute;
     top: 144px;
     left: 58px;

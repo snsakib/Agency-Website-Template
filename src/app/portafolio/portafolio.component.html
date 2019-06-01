@@ -1,36 +1,34 @@
-
-  <section id="description">
-    <section class="description-header">
-      <p class="header-bg">CE</p>
-      <h1>Casos</h1>
-      <h2>de Éxito</h2>
-    </section>
-    <p class="description-para">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-      ullamcorper diam nisl, eget vulputate sapien scelerisque ut. Pellentesque
-      ultrices turpis quis metus ullamcorper ultricies.
-    </p>
-    <button class="description-btn">
-      Ver Portafolio
-    </button>
+<section id="description">
+  <section class="description-header">
+    <p>CE</p>
+    <p>Casos</p>
+    <p>de Éxito</p>
   </section>
+  <p class="description-para">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+    ullamcorper diam nisl, eget vulputate sapien scelerisque ut. Pellentesque
+    ultrices turpis quis metus ullamcorper ultricies.
+  </p>
+  <button class="description-btn">
+    Ver Portafolio
+  </button>
+</section>
 
-  <section id="works">
-    <mat-card *ngFor="let portfolio of portfolios">
-      <p class="categoria">{{ portfolio.category }}</p>
-      <img
-        mat-card-image
-        src="{{ portfolio.imgSrc }}"
-        alt="{{ portfolio.imgAlt }}"
-      />
-      <mat-card-header>
-        <mat-card-title>{{ portfolio.title }}</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <p>
-          {{ portfolio.content }}
-        </p>
-      </mat-card-content>
-    </mat-card>
-  </section>
-
+<section id="works">
+  <mat-card *ngFor="let portfolio of portfolios">
+    <p class="categoria">{{ portfolio.category }}</p>
+    <img
+      mat-card-image
+      src="{{ portfolio.imgSrc }}"
+      alt="{{ portfolio.imgAlt }}"
+    />
+    <mat-card-header>
+      <mat-card-title>{{ portfolio.title }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>
+        {{ portfolio.content }}
+      </p>
+    </mat-card-content>
+  </mat-card>
+</section>
