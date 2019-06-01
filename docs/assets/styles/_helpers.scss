@@ -1,42 +1,59 @@
 .description-header {
   width: 280px;
   position: relative;
+  text-align: center;
 
-  .header-bg {
+  p:nth-of-type(1) {
     text-shadow: 7px 2px 7px rgba(49, 34, 101, 0.2);
-    font-size: 190px;
+    font-size: 130px;
     font-weight: 900;
     color: #ffffff;
+
+    @media screen and (min-width: 576px) {
+      font-size: 190px;
+    }
   }
 
-  h1 {
+  p:nth-of-type(2) {
     position: absolute;
-    top: 110px;
-    left: 58px;
-    font-size: 25px;
+    top: 70px;
+    left: 90px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 1.79;
     letter-spacing: 8.4px;
     color: #312265;
+
+    @media screen and (min-width: 576px) {
+      font-size: 25px;
+      top: 110px;
+      left: 65px;
+    }
   }
 
-  h2 {
+  p:nth-of-type(3) {
     position: absolute;
-    top: 144px;
-    left: 58px;
-    font-size: 20px;
+    top: 100px;
+    left: 90px;
+    font-size: 16px;
     font-weight: 800;
     line-height: 1.79;
     letter-spacing: 8.4px;
     color: #312265;
-  }
-}
 
-.description-para {
-  font-size: 1rem;
-  font-weight: 300;
-  color: #18191b;
-  margin-left: 58px;
+    @media screen and (min-width: 576px) {
+      font-size: 20px;
+      top: 144px;
+      left: 65px;
+    }
+  }
+
+  .description-para {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #18191b;
+    margin-left: 58px;
+  }
 }
 
 .description-btn {
@@ -47,7 +64,6 @@
   background-color: white;
   padding: 3px 20px;
   margin: 1rem 0;
-  margin-left: 58px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 
