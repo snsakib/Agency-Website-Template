@@ -16,17 +16,17 @@
       <a
         *ngFor="let menuOption of menuOptions"
         mat-list-item
-        href="#{{ menuOption }}"
+        href="#{{ menuOption.linkId }}"
         (click)="drawer.toggle()"
         class="nav-link"
       >
-        {{ menuOption }}
+        {{ menuOption.menuText }}
       </a>
     </mat-nav-list>
-    <button mat-flat-button color="warn" class="contact-btn">
+    <a mat-flat-button color="warn" class="contact-btn" href="#contact" (click)="drawer.toggle()">
       Contáctanos
       <mat-icon inline="true">call</mat-icon>
-    </button>
+    </a>
   </mat-sidenav>
   <mat-sidenav-content>
     <!-- Navbar -->
@@ -50,22 +50,22 @@
           <a
             *ngFor="let menuOption of menuOptions"
             mat-list-item
-            href="#{{ menuOption }}"
+            href="#{{ menuOption.linkId }}"
             class="nav-link"
           >
-            {{ menuOption }}
+            {{ menuOption.menuText }}
           </a>
         </mat-nav-list>
       </mat-nav-list>
-      <button mat-flat-button color="warn" *ngIf="isLaptop" class="contact-btn">
+      <a mat-flat-button color="warn" *ngIf="isLaptop" class="contact-btn" href="#contact">
         Contáctanos <mat-icon inline="true">call</mat-icon>
-      </button>
+      </a>
     </mat-toolbar>
     <app-home id="home"></app-home>
-    <app-la-agencia></app-la-agencia>
-    <app-servicios></app-servicios>
-    <app-portafolio></app-portafolio>
-    <app-blog></app-blog>
+    <app-la-agencia id="la-agencia"></app-la-agencia>
+    <app-servicios id="servicios"></app-servicios>
+    <app-portafolio id="portafolio"></app-portafolio>
+    <app-blog id="blog"></app-blog>
     <app-contact id="contact"></app-contact>
     <app-footer></app-footer>
   </mat-sidenav-content>
