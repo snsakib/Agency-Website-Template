@@ -46,16 +46,17 @@
 
   .description-header {
     margin: auto;
+
+    p {
+      color: white;
+    }
+
+    p:nth-of-type(1) {
+      color: #312265;
+    }
   }
 
-  .header-bg {
-    color: #312265;
-  }
 
-  h1,
-  h2 {
-    color: white;
-  }
 
   form {
     padding: 0 1rem;
