@@ -4,7 +4,7 @@
   background-size: 30px 30px;
   margin-top: -11rem;
   padding-top: 11rem;
-    display: -webkit-box;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
@@ -29,5 +29,23 @@
 #description {
   @media screen and (min-width: 1000px) {
     width: 40%;
+  }
+}
+
+.description-para {
+  padding: 0 2rem;
+
+  span {
+    font-weight: bold;
+  }
+}
+
+.description-btn {
+  margin-left: 2rem;
+}
+
+#illustration {
+  img {
+    display: block;
   }
 }
