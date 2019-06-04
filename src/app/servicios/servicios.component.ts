@@ -9,7 +9,7 @@ export class ServiciosComponent implements OnInit {
   services = [
     {
       imgSrc: 'assets/images/servicios/service-1.png',
-      imgAlt: '#',
+      imgAlt: 'Illustration',
       title: 'Nombre del Servicio',
       content:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ullamcorper diam nisl, eget vulputate sapien scelerisque ut.',
@@ -18,7 +18,7 @@ export class ServiciosComponent implements OnInit {
     },
     {
       imgSrc: 'assets/images/servicios/service-2.png',
-      imgAlt: '#',
+      imgAlt: 'Illustration',
       title: 'Nombre del Servicio',
       content:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ullamcorper diam nisl, eget vulputate sapien scelerisque ut.',
@@ -27,7 +27,7 @@ export class ServiciosComponent implements OnInit {
     },
     {
       imgSrc: 'assets/images/servicios/service-3.png',
-      imgAlt: '#',
+      imgAlt: 'Illustration',
       title: 'Nombre del Servicio',
       content:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ullamcorper diam nisl, eget vulputate sapien scelerisque ut.',
@@ -36,7 +36,7 @@ export class ServiciosComponent implements OnInit {
     },
     {
       imgSrc: 'assets/images/servicios/service-4.png',
-      imgAlt: '#',
+      imgAlt: 'Illustration',
       title: 'Nombre del Servicio',
       content:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ullamcorper diam nisl, eget vulputate sapien scelerisque ut.',

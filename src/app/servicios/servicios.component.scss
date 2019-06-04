@@ -4,24 +4,22 @@
   background-size: 30px 30px;
 }
 
-#description {
-  .description-header {
-    margin: 0 auto;
-  }
+.description-header {
+  margin: 0 auto;
+}
 
-  .description-para {
-    width: 280px;
-    margin: 0 auto;
+.description-para {
+  width: 280px;
+  margin: 0 auto;
 
-    @media screen and (min-width: 450px) {
-      width: 400px;
-    }
+  @media screen and (min-width: 450px) {
+    width: 400px;
   }
+}
 
-  .description-btn {
-    display: block;
-    margin: 2rem auto;
-  }
+.description-btn {
+  display: block;
+  margin: 2rem auto;
 }
 
 #service-demo {
@@ -42,7 +40,7 @@
   text-align: center;
   margin: 1rem;
 
-  &:not([class*='mat-elevation-z']) {
+  &:not([class*="mat-elevation-z"]) {
     -webkit-box-shadow: none;
     box-shadow: none;
   }
