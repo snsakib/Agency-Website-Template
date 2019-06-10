@@ -1,4 +1,4 @@
-<div id="contact-form">
+<section id="contact-form">
   <div class="description-header">
     <p>PC</p>
     <p>¡Ponte en</p>
@@ -10,25 +10,23 @@
       <input
         matInput
         type="text"
-        placeholder="Nambra (required)"
+        placeholder="Nambra"
         formControlName="name"
-        required
       />
     </mat-form-field>
     <mat-form-field color="warn">
       <input
         matInput
         type="email"
-        placeholder="Email (required)"
+        placeholder="Email"
         formControlName="email"
-        required
       />
     </mat-form-field>
     <mat-form-field color="warn">
       <input
         matInput
         type="text"
-        placeholder="Celular"
+        placeholder="Celular (Optional)"
         formControlName="mobile"
       />
     </mat-form-field>
@@ -36,9 +34,8 @@
       <input
         matInput
         type="textarea"
-        placeholder="Tu mensaje (required)"
+        placeholder="Tu mensaje"
         formControlName="message"
-        required
       />
     </mat-form-field>
     <mat-checkbox color="warn" formControlName="terms">
@@ -46,7 +43,7 @@
     </mat-checkbox>
     <button mat-raised-button type="submit" [disabled]="!contactForm.valid">Enviar datos</button>
   </form>
-</div>
+</section>
 <div id="contact-message">
   <h1>Te asesoramos</h1>
   <h2>loren ipsum dolor sit</h2>
