@@ -1,16 +1,16 @@
 <footer>
-  <section id="contact-links">
+  <div id="contact-links">
     <section id="subscribe">
-      <span>¡Suscríbete a nuestro Newsletter!</span>
+      <p>¡Suscríbete a nuestro Newsletter!</p>
       <form (ngSubmit)="sendMessage()" [formGroup]="subscribeForm">
-        <input type="email" placeholder="nombreusuario@gmail.com" formControlName="email" required/>
-        <button mat-raised-button type="submit" [disabled]="!subscribeForm.valid">
+        <input type="email" placeholder="nombreusuario@gmail.com" formControlName="email"/>
+        <button mat-raised-button type="submit">
           Enviar
         </button>
       </form>
     </section>
     <section id="contact">
-      <span>Encuentra más contenido</span>
+      <p>Encuentra más contenido</p>
       <div id="social-links">
         <!-- Facebook Link -->
         <a href="#">
@@ -33,30 +33,31 @@
         </a>
       </div>
     </section>
-  </section>
-  <section id="info">
-    <img src="assets/images/footer/map-246.png" alt="" />
+  </div>
+  <div id="info">
+    <img src="assets/images/footer/map-246.png" alt="A map of Tu empresa" />
     <section id="address">
-      <h1>Datos de contacto</h1>
-      <h2>
+      <p>Datos de contacto</p>
+      <p>
         Teléfono:
         <span>(+57) 300 789 45 23</span>
-      </h2>
-      <h2>
+      </p>
+      <p>
         Email:
         <span>contact@tuempresa.com</span>
-      </h2>
-      <h2>
+      </p>
+      <p>
         Dirección:
         <span>Carrera 12 # 34 - 56</span>
-      </h2>
+      </p>
     </section>
-    <section id="message">
-      <h1>Déjanos tu mensaje</h1>
-      <textarea name="msg" id="msg" cols="20" rows="5"></textarea>
-    </section>
+    <div id="message">
+      <p>Déjanos tu mensaje</p>
+      <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+      <button mat-raised-button color="warn" type="submit">Send Message</button>
+    </div>
     <section id="sitemap">
-      <h1>Mapa del sitio</h1>
+      <p>Mapa del sitio</p>
       <section id="page-links">
         <ul>
           <li><a href="#">Home</a></li>
@@ -71,10 +72,10 @@
       </section>
       <a href="#" id="last-link">¡Solicita una asesoría aquí!</a>
     </section>
-  </section>
+  </div>
   <section id="terms">
-    <a href="#">Términos y Condiciones</a>
-    <span>Nombre de tu empresa © 2019 Todos los derechos reservados</span>
-    <a href="">Diseño por behance.net/ndavidsan</a>
+    <small><a href="#">Términos y Condiciones</a></small>
+    <small>Nombre de tu empresa © 2019 Todos los derechos reservados</small>
+    <small><a href="#">Diseño por behance.net/ndavidsan</a></small>
   </section>
 </footer>
