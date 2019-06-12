@@ -22,6 +22,6 @@
 
 - Photoshop
 
-## [Live Demo](https://www.snsakib.com/agency-landing-page/)
+## [Live Demo](https://www.snsakib.com/Agency/)
 
 ## [Case Study](https://www.snsakib.com/projects/agency/case-study)
