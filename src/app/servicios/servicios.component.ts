@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ServiciosComponent implements OnInit {
   services = [
     {
-      imgSrc: 'agency/assets/images/servicios/service-1.png',
+      imgSrc: 'assets/images/servicios/service-1.png',
       imgAlt: 'Illustration',
       title: 'Nombre del Servicio',
       content:
@@ -17,7 +17,7 @@ export class ServiciosComponent implements OnInit {
       CTAhref: '#'
     },
     {
-      imgSrc: 'agency/assets/images/servicios/service-2.png',
+      imgSrc: 'assets/images/servicios/service-2.png',
       imgAlt: 'Illustration',
       title: 'Nombre del Servicio',
       content:
@@ -26,7 +26,7 @@ export class ServiciosComponent implements OnInit {
       CTAhref: '#'
     },
     {
-      imgSrc: 'agency/assets/images/servicios/service-3.png',
+      imgSrc: 'assets/images/servicios/service-3.png',
       imgAlt: 'Illustration',
       title: 'Nombre del Servicio',
       content:
@@ -35,7 +35,7 @@ export class ServiciosComponent implements OnInit {
       CTAhref: '#'
     },
     {
-      imgSrc: 'agency/assets/images/servicios/service-4.png',
+      imgSrc: 'assets/images/servicios/service-4.png',
       imgAlt: 'Illustration',
       title: 'Nombre del Servicio',
       content:
