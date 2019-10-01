@@ -24,4 +24,4 @@
 
 ## [Live Demo](https://project-agency.netlify.com)
 
-## [Case Study](https://www.snsakib.com/projects/agency/case-study)
+## [Case Study](https://www.snsakib.com/case-study/agency)
