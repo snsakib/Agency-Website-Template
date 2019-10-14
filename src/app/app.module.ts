@@ -6,6 +6,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
+
 import {
   MatToolbarModule,
   MatButtonModule,
@@ -50,7 +52,8 @@ import { FooterComponent } from './footer/footer.component';
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    AnimateOnScrollModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

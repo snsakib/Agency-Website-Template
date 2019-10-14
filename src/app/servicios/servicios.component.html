@@ -14,7 +14,7 @@
   </button>
 </section>
 <section id="service-demo">
-  <mat-card *ngFor="let service of services">
+  <mat-card *ngFor="let service of services" animateOnScroll animationName="animated fadeInUp" offset="1000">
     <img mat-card-image src="{{ service.imgSrc }}" alt="{{ service.imgAlt }}" />
     <mat-card-header>
       <mat-card-title>{{ service.title }}</mat-card-title>
