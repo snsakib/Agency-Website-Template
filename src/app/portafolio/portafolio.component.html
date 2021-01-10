@@ -9,26 +9,28 @@
     ullamcorper diam nisl, eget vulputate sapien scelerisque ut. Pellentesque
     ultrices turpis quis metus ullamcorper ultricies.
   </p>
-  <button class="description-btn">
-    Ver Portafolio
-  </button>
+  <button class="description-btn">Ver Portafolio</button>
 </div>
 
 <section id="works">
-  <mat-card *ngFor="let portfolio of portfolios">
-    <p class="categoria">{{ portfolio.category }}</p>
-    <img
-      mat-card-image
-      src="{{ portfolio.imgSrc }}"
-      alt="{{ portfolio.imgAlt }}"
-    />
-    <mat-card-header>
-      <mat-card-title>{{ portfolio.title }}</mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-      <p>
-        {{ portfolio.content }}
-      </p>
-    </mat-card-content>
-  </mat-card>
+  <mat-grid-list [cols]="cols" rowHeight="300" gutterSize="1.5rem">
+    <mat-grid-tile *ngFor="let portfolio of portfolios">
+      <mat-card>
+        <p class="categoria">{{ portfolio.category }}</p>
+        <img
+          mat-card-image
+          src="{{ portfolio.imgSrc }}"
+          alt="{{ portfolio.imgAlt }}"
+        />
+        <mat-card-header>
+          <mat-card-title>{{ portfolio.title }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>
+            {{ portfolio.content }}
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
 </section>

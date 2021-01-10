@@ -1,11 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-
+import { BreakpointObserver, Breakpoints } from "@angular/cdk/layout";
 @Component({
   selector: 'app-portafolio',
   templateUrl: './portafolio.component.html',
   styleUrls: ['./portafolio.component.scss']
 })
 export class PortafolioComponent implements OnInit {
+  cols: number;
+
+  gridByBreakpoint = {
+    lg: 3,
+    sm: 2,
+    xs: 1,
+  };
+
   portfolios = [
     {
       category: 'Categoría',
@@ -57,7 +65,27 @@ export class PortafolioComponent implements OnInit {
     }
   ];
 
-  constructor() {}
+  constructor(private breakpointObserver: BreakpointObserver) {
+    this.breakpointObserver
+    .observe([
+      Breakpoints.XSmall,
+      Breakpoints.Small,
+      Breakpoints.Large
+    ])
+    .subscribe((result) => {
+      if (result.matches) {
+        if (result.breakpoints[Breakpoints.XSmall]) {
+          this.cols = this.gridByBreakpoint.xs;
+        }
+        if (result.breakpoints[Breakpoints.Small]) {
+          this.cols = this.gridByBreakpoint.sm;
+        }
+        if (result.breakpoints[Breakpoints.Large]) {
+          this.cols = this.gridByBreakpoint.lg;
+        }
+      }
+    });
+  }
 
   ngOnInit() {}
 }

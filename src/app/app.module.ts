@@ -16,6 +16,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatGridListModule} from '@angular/material/grid-list';
 import { HomeComponent } from './home/home.component';
 import { LaAgenciaComponent } from './la-agencia/la-agencia.component';
 import { ServiciosComponent } from './servicios/servicios.component';
@@ -50,6 +51,7 @@ import { FooterComponent } from './footer/footer.component';
     MatFormFieldModule,
     MatInputModule,
     MatCheckboxModule,
+    MatGridListModule,
     HammerModule
   ],
   providers: [],
