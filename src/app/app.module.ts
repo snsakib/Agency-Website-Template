@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, HammerModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
@@ -8,17 +8,15 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 
-import {
-  MatToolbarModule,
-  MatButtonModule,
-  MatSidenavModule,
-  MatIconModule,
-  MatListModule,
-  MatCardModule,
-  MatFormFieldModule,
-  MatInputModule,
-  MatCheckboxModule
-} from '@angular/material';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { MatListModule } from '@angular/material/list';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { HomeComponent } from './home/home.component';
 import { LaAgenciaComponent } from './la-agencia/la-agencia.component';
 import { ServiciosComponent } from './servicios/servicios.component';
@@ -53,7 +51,8 @@ import { FooterComponent } from './footer/footer.component';
     MatFormFieldModule,
     MatInputModule,
     MatCheckboxModule,
-    AnimateOnScrollModule.forRoot()
+    AnimateOnScrollModule.forRoot(),
+    HammerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
